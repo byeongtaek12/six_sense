@@ -6,8 +6,7 @@
     margin: 30px auto;
     padding: 20px;
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
 }
 
 .input-form {
@@ -61,7 +60,7 @@
     flex-direction: column;
     gap: 15px;
     overflow-y: auto;
-    scrollbar-width: thin;
+    scrollbar-width: none;
     scrollbar-color: #EEF0FE #f5f5f5;
 }
 
