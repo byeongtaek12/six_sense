@@ -16,12 +16,28 @@
         /* 박서하 */
         * {
             font-family: "Black Han Sans", serif;
+            margin: 0;
         }
 
         body {
             background-image: url('image/background.png');
             background-position: center;
             background-size: cover;
+        }
+
+        .navbar {
+            height: 200px;
+            border-bottom: 2px dotted #212529;
+        }
+
+        .navbar-brand {
+            margin: 50px auto 0px auto;
+            font-size: 400%;
+        }
+
+        .tag {
+            margin-top: 164px;
+            margin-right: -150px;
         }
 
         .s1 {
@@ -73,7 +89,7 @@
         .accordion-button:focus {
             font-family: "Noto Sans KR", serif;
             background-color: #EEF0FE !important;
-            color: #D5EBFA !important;
+            color: #212529 !important;
             box-shadow: none !important;
             border-color: #EEF0FE !important;
         }
@@ -91,7 +107,7 @@
         }
 
         .card {
-            margin: 10px 100px 10px 0px;
+            margin: 20px;
         }
 
         .card-img-top {
@@ -126,38 +142,64 @@
         .card-body>p {
             font-size: 40px;
         }
-
-        
     </style>
     <script type="module">
         $(document).ready(function () {
             $("#card1").click(function () {
                 window.location.href = "mypage1.html";
             });
-    
+
             $("#card2").click(function () {
                 window.location.href = "mypage2.html";
             });
-    
+
             $("#card3").click(function () {
                 window.location.href = "mypage3.html";
             });
         });
-    
-    
+
+
     </script>
 </head>
 
 <body>
     <!-- 박서하 -->
-    <nav class="navbar bg-primary" data-bs-theme="dark" style="background-color: #EEF0FE;">
-        <nav class="navbar navbar-expand-lg" style="background-color: #EEF0FE;">
-            <div class="container-md">
-                <a class="navbar-brand" href="#" style="color: #333;">Spring 6기 6조 Six Sense</a>
-            </div>
-        </nav>
+    <nav class="navbar navbar-expand-lg" style="background-color: #EEF0FE;">
+        <div class="container-md">
+            <a class="navbar-brand" href="#" style="color: #212529;">Six Sense</a>
+            <img src="image/tag.png" class="tag" alt="...">
+        </div>
     </nav>
 
+    
+
+    <!-- 오병택 -->
+    <div class="card-group">
+        <div class="card" id="card1">
+            <img src="image/member1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">박서하</h5>
+                <p class="card-text">팀장</p>
+            </div>
+        </div>
+        <div class="card" id="card2">
+            <img src="image/member2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">김국민</h5>
+                <p class="card-text">팀원</p>
+
+            </div>
+        </div>
+        <div class="card" id="card3">
+            <img src="image/member3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">오병택</h5>
+                <p class="card-text">팀원</p>
+            </div>
+        </div>
+    </div>
+
+    <!--dd-->
     <div class="s1">
         <div class="left">
             <h1>TEAM SLOGAN</h1>
@@ -170,12 +212,10 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="image/slogan1.png"
-                            class="d-block w-100" alt="...">
+                        <img src="image/slogan1.png" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="image/slogan2.png"
-                            class="d-block w-100" alt="...">
+                        <img src="image/slogan2.png" class="d-block w-100" alt="...">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -229,33 +269,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 오병택 -->
-    <div class="card-group">
-        <div class="card" id="card1">
-            <img src="image/member1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">박서하</h5>
-                <p class="card-text">팀장</p>
-
-            </div>
-        </div>
-        <div class="card" id="card2">
-            <img src="image/member2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">김국민</h5>
-                <p class="card-text">팀원</p>
-
-            </div>
-        </div>
-        <div class="card" id="card3">
-            <img src="image/member3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">오병택</h5>
-                <p class="card-text">팀원</p>
             </div>
         </div>
     </div>
