@@ -162,6 +162,51 @@
         .card-body>p {
             font-size: 40px;
         }
+
+        /*footer*/
+        footer {
+            background-color: #EEF0FE;
+            width: 100%;
+            height: 150px;
+            margin-top: 5%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        footer>ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        footer>ul li {
+            padding: 10px 15px;
+            position: relative;
+        }
+
+        footer>ul li:not(:last-child)::after {
+            content: '|';
+            position: absolute;
+            top: 10px;
+            right: 0px;
+            /* 위치 조정 */
+        }
+
+        footer>p {
+            margin-left: 15px;
+        }
+
+        a:link {
+            color: #424242;
+        }
+
+        a:visited {
+            color: #424242;
+        }
     </style>
     <script type="module">
         $(document).ready(function () {
@@ -191,22 +236,22 @@
         </div>
     </nav>
 
-    
 
-    <!-- 오병택 -->
-    <div class="card-group">
-        <div class="card" id="card1">
-            <img src="image/member1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">박서하</h5>
-                <p class="card-text">팀장</p>
+    <div class="container-body">
+        <!-- 오병택 -->
+        <div class="card-group">
+            <div class="card" id="card1">
+                <img src="image/member1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">박서하</h5>
+                    <p class="card-text">팀장</p>
+                </div>
             </div>
-        </div>
-        <div class="card" id="card2">
-            <img src="image/member2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">김국민</h5>
-                <p class="card-text">팀원</p>
+            <div class="card" id="card2">
+                <img src="image/member2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">김국민</h5>
+                    <p class="card-text">팀원</p>
 
                 </div>
             </div>
@@ -317,11 +362,11 @@
                     <p>Team : sparta - 6</p>
                 </a>
             </li>
-    
-    
+
+
         </ul>
         <p>&copy; 2025 (주) Sparta introducing my team. All rights reserved.</p>
-    
+
     </footer>
 
 </body>
