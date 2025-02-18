@@ -40,33 +40,40 @@
             margin-right: -150px;
         }
 
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 50px auto;
+            max-width: 90%;
+            padding: 20px;
+        }
+
         .s1 {
-            width: 60%;
-            height: 600px;
-            margin: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: stretch;
+            gap: 50px;
+            width: 100%;
         }
 
-        div.left {
-            width: 30%;
-            float: left;
-            box-sizing: border-box;
-            margin-left: 90px;
-        }
-
-        div.right {
-            width: 25%;
-            float: right;
-            box-sizing: border-box;
+        .left,
+        .right {
+            flex: 1;
+            min-width: 300px;
+            max-width: 600px;
         }
 
         .carousel {
-            width: 700px;
-            margin-top: 30px;
+            max-width: 100%;
+            height: auto;
         }
 
         .accordion {
             font-family: "Noto Sans KR", serif;
-            width: 700px;
+            width: 100%;
+            max-width: 700px;
             margin-top: 30px;
         }
 
@@ -102,20 +109,24 @@
 
         /* 오병택 */
         .card-group {
-            width: 80%;
-            margin-left: auto;
-            margin-right: auto;
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
             display: flex;
-            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
         }
 
         .card {
-            margin: 20px;
+            flex: 1 1 300px;
+            max-width: 400px;
+            margin: 10px;
         }
 
         .card-img-top {
             width: 100%;
-            height: 400px;
+            height: auto;
             object-fit: cover;
         }
 
@@ -144,6 +155,34 @@
 
         .card-body>p {
             font-size: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                height: auto;
+                padding: 20px;
+            }
+
+            .navbar-brand {
+                font-size: 2rem;
+            }
+
+            .tag {
+                max-width: 100px;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .accordion h5,
+            .card-body h5 {
+                font-size: 1.2rem;
+            }
+
+            .card-body p {
+                font-size: 1rem;
+            }
         }
     </style>
     <script type="module">
@@ -174,7 +213,7 @@
         </div>
     </nav>
 
-    
+
 
     <!-- 오병택 -->
     <div class="card-group">
