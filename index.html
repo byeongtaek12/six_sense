@@ -7,9 +7,11 @@
     <title>sparta-6</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/comment.js" type="module"></script><!--김국민-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/comment.css"><!--김국민 css-->
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@100..900&display=swap');
 
@@ -341,30 +343,22 @@
 
         <!-- 김국민 -->
         <div id="comments-section"></div>
-        <script>
-            fetch('comment.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('comments-section').innerHTML = data;
-                })
-                .catch(error => console.log(error));
-        </script>
     </div>
     <footer>
-            <ul>
-                <li>
-                    <a href="https://github.com/classseoha/six_sense" style="text-decoration: none;">
-                        <p>Git Hub</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.notion.so/teamsparta/6-19d2dc3ef514807abb25d25cd886cbdc"
-                        style="text-decoration: none;">
-                        <p>Team : sparta - 6</p>
-                    </a>
-                </li>
-            </ul>
-            <p>&copy; 2025 (주) Sparta introducing my team. All rights reserved.</p>
+        <ul>
+            <li>
+                <a href="https://github.com/classseoha/six_sense" style="text-decoration: none;">
+                    <p>Git Hub</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.notion.so/teamsparta/6-19d2dc3ef514807abb25d25cd886cbdc"
+                    style="text-decoration: none;">
+                    <p>Team : sparta - 6</p>
+                </a>
+            </li>
+        </ul>
+        <p>&copy; 2025 (주) Sparta introducing my team. All rights reserved.</p>
     </footer>
 
 </body>
