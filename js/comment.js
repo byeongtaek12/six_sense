@@ -20,6 +20,8 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
+const offset = new Date().getTimezoneOffset() * 60000;
+
 fetch('comment.html')
     .then(response => response.text())
     .then(data => {
@@ -36,10 +38,11 @@ fetch('comment.html')
                 return;
             }
 
+
             let doc = {
                 "name": name,
                 "contents": contents,
-                "date": new Date().toISOString()
+                "date": (new Date(Date.now()-offset)).toISOString()
             };
 
             // 댓글 Firestore에 저장
